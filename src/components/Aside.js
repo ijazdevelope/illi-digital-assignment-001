@@ -7,18 +7,28 @@ import Profile from '../assests/Group 6571.png'
 
 const Aside = ({ sideBarWidth, setSideBarWidth, miniSideBar, setMiniSideBar }) => {
 
+    const handlerSidebarToggler = (e) => {
+        e.preventDefault()
+        setSideBarWidth(!sideBarWidth)
+    }
+
+    const handlerMiniSidebar = (e) => {
+        e.preventDefault()
+        setMiniSideBar(!miniSideBar)
+    }
+
     return (
         <>
             <main>
                 <aside className='aside_wrapper'>
                     <ul className={`nav flex-column mb-auto text-white overflow-hidden border-3 border-end position-absolute ${sideBarWidth && 'sidebar-width'}`}>
                         <li className="nav-item">
-                            <a href="/" className="nav-link d-flex align-items-center text-white">
-                                <img onClick={() => setSideBarWidth(!sideBarWidth)} className='me-3' src={Dashboard} alt='dashboard-icon' />
+                            <a onClick={handlerSidebarToggler} href="/" className="nav-link d-flex align-items-center text-white">
+                                <img className='me-3' src={Dashboard} alt='dashboard-icon' />
                                 Dashboard
                             </a>
                         </li>
-                        <li className="nav-item list-items" onClick={() => setMiniSideBar(!miniSideBar)}>
+                        <li className="nav-item list-items" onClick={handlerMiniSidebar}>
                             <a href="/" className="nav-link d-flex align-items-center text-white" aria-current="page">
                                 <img className='me-3' src={MyFarm} alt='myfarm-icon' />
                                 My Farm
