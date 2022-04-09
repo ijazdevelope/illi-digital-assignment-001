@@ -1,5 +1,4 @@
 import React from 'react'
-import ControlPanel from '../assests/Control Panel.png'
 import MyInputs from '../assests/Inputs.png'
 import SelectDates from '../assests/• Select Dates.png'
 import SelectPoundes from '../assests/• Select Ponds.png'

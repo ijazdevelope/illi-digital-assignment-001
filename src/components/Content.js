@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from './Tabs'
 import Toggle from '../assests/Toggle 1.png'
 import Pond1 from '../assests/Pond 1.png'
 import Pond2 from '../assests/Pond 2.png'
@@ -39,10 +38,10 @@ const Content = () => {
                 </div>
             </section>
 
-            {waterCheck == 'water check' && <WaterCheck />}
-            {waterCheck == 'check shrimp' && <CheckShrimp />}
-            {waterCheck == 'feeding' && <Feeding />}
-            {waterCheck == 'custom' && <Custom />}
+            {waterCheck === 'water check' && <WaterCheck />}
+            {waterCheck === 'check shrimp' && <CheckShrimp />}
+            {waterCheck === 'feeding' && <Feeding />}
+            {waterCheck === 'custom' && <Custom />}
 
         </div>
     )
