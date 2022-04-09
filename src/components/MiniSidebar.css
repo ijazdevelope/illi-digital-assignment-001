@@ -4,6 +4,8 @@ main.position-absolute {
 
 .miniSide_bar ul {
     background-color: rgb(187, 187, 187);
+    z-index: 10;
+    position: relative;
 }
 
 .miniSide_bar ul li:first-child {
