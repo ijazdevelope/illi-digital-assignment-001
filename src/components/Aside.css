@@ -1,0 +1,40 @@
+:root {
+    --asidebar-bg-clr: #808080;
+    --text-white: #ffffff;
+    --text-green: #18ce18;
+}
+
+ul.nav {
+    background-color: var(--asidebar-bg-clr);
+    height: 100vh;
+    width: 180px;
+}
+
+ul.nav li:first-child {
+    margin-bottom: 10rem;
+}
+
+ul.nav li a {
+    color: var(--text-white);
+    white-space: nowrap;
+}
+
+ul.nav li:hover a {
+    color: var(--text-white) !important;
+}
+
+ul.nav li a img {
+    width: 25px;
+}
+
+.list-items {
+    background-color: var(--text-green);
+}
+
+.sidebar-width {
+    width: 60px !important;
+}
+
+.aside_wrapper ul {
+    z-index: 5;
+}

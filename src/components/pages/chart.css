@@ -1,0 +1,4 @@
+.chart_wrapper {
+    max-height: 80vh;
+    overflow: auto;
+}

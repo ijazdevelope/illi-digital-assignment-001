@@ -1,0 +1,35 @@
+main.position-absolute {
+    left: 11rem;
+}
+
+.miniSide_bar ul {
+    background-color: rgb(187, 187, 187);
+}
+
+.miniSide_bar ul li:first-child {
+    margin-bottom: 160px;
+    margin-bottom: 45px;
+    left: 8.5rem;
+    top: -20px;
+    font-size: 1.5rem;
+}
+
+.miniSide_bar ul li a.color {
+    color: #e4e4e4;
+}
+
+.filterOpacity {
+    filter: opacity(0.5);
+}
+
+.background_Gray {
+    background-color: #808080;
+}
+
+.overlay {
+    background: rgb(141 140 140 / 50%);
+    position: absolute;
+    inset: 0;
+    width: 74vw;
+    left: 11rem
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Aside from './components/Aside';
+import Inputs from './components/Inputs';
+import Content from './components/Content';
+import MiniSidebar from './components/MiniSidebar';
 
 function App() {
+  const [sideBarWidth, setSideBarWidth] = useState(true)
+  const [miniSideBar, setMiniSideBar] = useState(false)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex myApp overflow-hidden">
+      <Aside sideBarWidth={sideBarWidth} setSideBarWidth={setSideBarWidth} setMiniSideBar={setMiniSideBar} miniSideBar={miniSideBar} />
+      <section className="d-flex w-100">
+        <MiniSidebar miniSideBar={miniSideBar} setMiniSideBar={setMiniSideBar} />
+        <Inputs />
+        <Content />
+      </section>
     </div>
   );
 }
